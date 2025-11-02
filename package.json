@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/netrill.git"
+    "url": "https://github.com/gorvi/netrill.git"
   },
   "engines": {
     "node": ">=14.0.0"
