@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI与数据能力开发服务 - Netrill | 上海络川科技有限公司</title>
+  <meta name="description" content="Netrill（上海络川科技有限公司）提供AI与数据能力开发服务，智能问答、知识库系统、数据可视化、智能分析。" />
+  <meta name="keywords" content="Netrill,AI集成,智能问答,知识库,数据可视化,智能分析,上海络川科技" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/i18n.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">
+          <img src="/img/logo96.png" alt="洛川科技 Logo" style="width:36px;height:36px;object-fit:contain" />
+        </div>
+        <span data-i18n="brand.name">洛川科技</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:12px;position:relative">
+        <a href="/index.html#kpi" data-i18n="nav.home">首页</a>
+        <a href="/index.html#services" data-i18n="nav.services">服务</a>
+        <a href="/index.html#process" data-i18n="nav.process">流程</a>
+        <a class="btn btn-primary" href="/pages/contact.html" data-i18n="nav.getQuote">获取报价</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="切换语言">中</button>
+        <div id="lang-dropdown" class="lang-dropdown">
+          <div class="lang-dropdown-item active" data-locale="zh-CN">
+            <span class="lang-dropdown-item-flag">🇨🇳</span>
+            <span>中文</span>
+          </div>
+          <div class="lang-dropdown-item" data-locale="en-US">
+            <span class="lang-dropdown-item-flag">🇺🇸</span>
+            <span>English</span>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero reveal">
+      <h1 data-i18n="servicePages.ai.title">AI 与数据能力</h1>
+      <p class="muted" data-i18n="servicePages.ai.subtitle">智能问答、知识库、数据可视化，赋能业务</p>
+    </section>
+
+    <div class="stat-grid reveal">
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="servicePages.ai.stat1">🤖</span>
+        <div class="muted" data-i18n="servicePages.ai.stat1_label">AI 集成</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="servicePages.ai.stat2">🧠</span>
+        <div class="muted" data-i18n="servicePages.ai.stat2_label">知识库</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="servicePages.ai.stat3">📊</span>
+        <div class="muted" data-i18n="servicePages.ai.stat3_label">可视化</div>
+      </div>
+    </div>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_capabilities">核心能力</h2>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.ai.capability1_icon">💬</div>
+          <h3 data-i18n="servicePages.ai.capability1_title">智能问答</h3>
+          <p class="muted" data-i18n="servicePages.ai.capability1_desc">ChatGPT、知识图谱、上下文理解</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.ai.capability2_icon">📚</div>
+          <h3 data-i18n="servicePages.ai.capability2_title">知识库系统</h3>
+          <p class="muted" data-i18n="servicePages.ai.capability2_desc">向量检索、语义搜索、文档管理</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.ai.capability3_icon">📊</div>
+          <h3 data-i18n="servicePages.ai.capability3_title">数据可视化</h3>
+          <p class="muted" data-i18n="servicePages.ai.capability3_desc">BI 报表、DashBoard、实时大屏</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.ai.capability4_icon">🔍</div>
+          <h3 data-i18n="servicePages.ai.capability4_title">智能分析</h3>
+          <p class="muted" data-i18n="servicePages.ai.capability4_desc">数据分析、预测模型、推荐系统</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_tech">技术栈</h2>
+      <div class="demo-container">
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <span class="badge badge-primary">Python</span>
+          <span class="badge badge-primary">LangChain</span>
+          <span class="badge">OpenAI API</span>
+          <span class="badge">Vector DB</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Streamlit</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_features">特色功能</h2>
+      <div class="code-block">
+        <code data-i18n="servicePages.ai.features_code1">// AI 能力展示</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.ai.features_code2">→ 文档智能解析与检索</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.ai.features_code3">→ 多模态输入支持</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.ai.features_code4">→ 个性化推荐系统</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.ai.features_code5">→ 情感分析与意图识别</code>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_delivery">交付内容</h2>
+      <ul class="feature-list">
+        <li><b data-i18n="servicePages.delivery_design">设计文件：</b><span data-i18n="servicePages.ai.delivery1_value">AI 模型集成、API 封装</span></li>
+        <li><b data-i18n="servicePages.delivery_code">前端代码：</b><span data-i18n="servicePages.ai.delivery2_value">知识库建设、数据管道</span></li>
+        <li><b data-i18n="servicePages.delivery_deploy">部署配置：</b><span data-i18n="servicePages.ai.delivery3_value">可视化组件、报表模板</span></li>
+        <li><b data-i18n="servicePages.delivery_doc">文档说明：</b><span data-i18n="servicePages.ai.delivery4_value">使用文档、运维指南</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div data-i18n="footer.copyright">© 2025 上海络川科技有限公司 · 已服务 X+ 客户 · 平均响应 < 24h</div>
+  </footer>
+</body>
+</html>
+
+

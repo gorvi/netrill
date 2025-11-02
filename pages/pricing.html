@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>建议报价与套餐 - Netrill | 上海络川科技有限公司</title>
+  <meta name="description" content="Netrill（上海络川科技有限公司）提供落地页极速包、小型官网、MVP 原型等专业报价与灵活计费方式，支持按小时、固定包、里程碑、订阅维护多种模式。" />
+  <meta name="keywords" content="Netrill,报价,套餐,计费,官网开发,MVP,落地页,上海络川科技" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/i18n.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">
+          <img src="/img/logo96.png" alt="洛川科技 Logo" style="width:36px;height:36px;object-fit:contain" />
+        </div>
+        <span data-i18n="brand.name">洛川科技</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:12px;position:relative">
+        <a href="/index.html#kpi" data-i18n="nav.home">首页</a>
+        <a href="/index.html#services" data-i18n="nav.services">服务</a>
+        <a href="/index.html#process" data-i18n="nav.process">流程</a>
+        <a class="btn btn-primary" href="/pages/contact.html" data-i18n="nav.getQuote">获取报价</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="切换语言">中</button>
+        <div id="lang-dropdown" class="lang-dropdown">
+          <div class="lang-dropdown-item active" data-locale="zh-CN">
+            <span class="lang-dropdown-item-flag">🇨🇳</span>
+            <span>中文</span>
+          </div>
+          <div class="lang-dropdown-item" data-locale="en-US">
+            <span class="lang-dropdown-item-flag">🇺🇸</span>
+            <span>English</span>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero reveal">
+      <h1 data-i18n="pricingPage.hero_title">建议报价与套餐</h1>
+      <p class="muted" data-i18n="pricingPage.hero_subtitle">固定范围用套餐，定制范围按里程碑；维护用订阅</p>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="pricingPage.section1_title">热门套餐</h2>
+      <div class="demo-grid">
+        <div class="card" style="text-align:center;position:relative;border:2px solid var(--pri)">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient);color:#fff;padding:4px 12px;border-radius:12px;font-size:12px;font-weight:600" data-i18n="pricingPage.package1_badge">推荐</div>
+          <div class="demo-item-icon" style="margin:0 auto 20px">🚀</div>
+          <h3 data-i18n="pricingPage.package1_title">落地页极速包</h3>
+          <div style="font-size:32px;font-weight:700;margin:20px 0;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" data-i18n="pricingPage.package1_price">¥3k–8k</div>
+          <ul style="text-align:left;list-style:none;padding:0" class="muted">
+            <li data-i18n="pricingPage.package1_item1">✓ 1页/3板块设计</li>
+            <li data-i18n="pricingPage.package1_item2">✓ 3日内上线</li>
+            <li data-i18n="pricingPage.package1_item3">✓ 基础 SEO 优化</li>
+            <li data-i18n="pricingPage.package1_item4">✓ 响应式布局</li>
+            <li data-i18n="pricingPage.package1_item5">✓ 部署与域名配置</li>
+          </ul>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="demo-item-icon" style="margin:0 auto 20px">🌐</div>
+          <h3 data-i18n="pricingPage.package2_title">小型官网</h3>
+          <div style="font-size:32px;font-weight:700;margin:20px 0;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" data-i18n="pricingPage.package2_price">¥8k–20k</div>
+          <ul style="text-align:left;list-style:none;padding:0" class="muted">
+            <li data-i18n="pricingPage.package2_item1">✓ 3–6 页完整设计</li>
+            <li data-i18n="pricingPage.package2_item2">✓ 表单与分析埋点</li>
+            <li data-i18n="pricingPage.package2_item3">✓ 2–4 周交付</li>
+            <li data-i18n="pricingPage.package2_item4">✓ CMS 管理系统</li>
+            <li data-i18n="pricingPage.package2_item5">✓ 部署与维护</li>
+          </ul>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="demo-item-icon" style="margin:0 auto 20px">💼</div>
+          <h3 data-i18n="pricingPage.package3_title">MVP 原型</h3>
+          <div style="font-size:32px;font-weight:700;margin:20px 0;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" data-i18n="pricingPage.package3_price">¥2w–6w</div>
+          <ul style="text-align:left;list-style:none;padding:0" class="muted">
+            <li data-i18n="pricingPage.package3_item1">✓ 关键功能实现</li>
+            <li data-i18n="pricingPage.package3_item2">✓ 权限与日志系统</li>
+            <li data-i18n="pricingPage.package3_item3">✓ 3–8 周迭代开发</li>
+            <li data-i18n="pricingPage.package3_item4">✓ 性能监控</li>
+            <li data-i18n="pricingPage.package3_item5">✓ 完整技术文档</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="pricingPage.section2_title">灵活的计费方式</h2>
+      <div class="demo-container">
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="demo-item-icon">⏱️</div>
+            <h3 data-i18n="pricingPage.billing1_title">按小时/天</h3>
+            <p class="muted"><b data-i18n="pricingPage.billing1_price">¥500–2000/小时</b></p>
+            <p class="muted" data-i18n="pricingPage.billing1_desc">适合顾问与救火</p>
+          </div>
+          <div class="demo-item">
+            <div class="demo-item-icon">📦</div>
+            <h3 data-i18n="pricingPage.billing2_title">固定包</h3>
+            <p class="muted"><b data-i18n="pricingPage.billing2_price">一次性付费</b></p>
+            <p class="muted" data-i18n="pricingPage.billing2_desc">明确范围，超范围按小时计</p>
+          </div>
+          <div class="demo-item">
+            <div class="demo-item-icon">🎯</div>
+            <h3 data-i18n="pricingPage.billing3_title">里程碑</h3>
+            <p class="muted"><b data-i18n="pricingPage.billing3_price">分阶段付费</b></p>
+            <p class="muted" data-i18n="pricingPage.billing3_desc">风险可控，按成果支付</p>
+          </div>
+          <div class="demo-item">
+            <div class="demo-item-icon">🔄</div>
+            <h3 data-i18n="pricingPage.billing4_title">订阅维护</h3>
+            <p class="muted"><b data-i18n="pricingPage.billing4_price">¥5k–20k/月</b></p>
+            <p class="muted" data-i18n="pricingPage.billing4_desc">开发小时+监控维护</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="pricingPage.section3_title">增值服务</h2>
+      <ul class="feature-list">
+        <li><b data-i18n="pricingPage.value1_label">SEO 优化：</b><span data-i18n="pricingPage.value1_text">+¥2k–8k · 深度优化、结构化数据</span></li>
+        <li><b data-i18n="pricingPage.value2_label">品牌设计：</b><span data-i18n="pricingPage.value2_text">+¥3k–15k · Logo、VI、视觉规范</span></li>
+        <li><b data-i18n="pricingPage.value3_label">多语言：</b><span data-i18n="pricingPage.value3_text">+¥1k–5k/语言 · 国际化支持</span></li>
+        <li><b data-i18n="pricingPage.value4_label">培训服务：</b><span data-i18n="pricingPage.value4_text">+¥2k–10k · 使用培训、技术转移</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div data-i18n="footer.copyright">© 2025 上海络川科技有限公司 · 已服务 X+ 客户 · 平均响应 < 24h</div>
+  </footer>
+</body>
+</html>
+
+

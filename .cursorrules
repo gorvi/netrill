@@ -1,0 +1,126 @@
+# Netrill | 上海络川科技有限公司
+
+## 项目结构
+
+这是一个静态网站项目，展示Netrill（上海络川科技有限公司）的企业官网定制开发与技术顾问服务，包含以下文件：
+
+### 核心文件
+- `index.html` - 网站首页（已国际化）
+- `styles.css` - 全站样式（深色/浅色主题）
+- `app.js` - JavaScript 交互增强
+- `i18n.js` - 国际化模块
+
+### 页面目录
+- `pages/` - 流程、报价、联系页面（已国际化）
+- `services/` - 各项服务详情页（8个服务，导航栏已国际化）
+- `components/` - 组件模板（如 `nav.html` 作为参考模板，实际HTML直接嵌入各页面）
+- `i18n/` - 国际化翻译文件目录
+
+### 配置文件
+- `robots.txt` - SEO配置
+- `sitemap.xml` - 站点地图
+- `README.md` - 项目文档
+
+## 技术特点
+
+### 主题系统
+- 默认深色主题（科技感配色）
+- 可切换浅色主题（Apple Store风格）
+- 主题偏好保存至 localStorage
+- 导航栏右上角主题切换按钮
+
+### 导航栏
+- 所有页面共用统一导航栏
+- 位置：sticky（固定在顶部）
+- 所有页面包含：品牌Logo + 名称、首页/服务/流程链接、获取报价按钮、语言切换、主题切换按钮
+- 间距：使用 `gap:12px` 统一间距
+- 导航链接文本已国际化
+
+### 导航链接结构
+**所有页面统一导航（包含语言切换）：**
+```html
+<div style="display:flex;align-items:center;gap:12px;position:relative">
+  <a href="#kpi" data-i18n="nav.home">首页</a>
+  <a href="#services" data-i18n="nav.services">服务</a>
+  <a href="#process" data-i18n="nav.process">流程</a>
+  <a class="btn btn-primary" href="/pages/contact.html" data-i18n="nav.getQuote">获取报价</a>
+  <button id="lang-toggle" class="lang-toggle" aria-label="切换语言">中</button>
+  <div id="lang-dropdown" class="lang-dropdown">
+    <div class="lang-dropdown-item active" data-locale="zh-CN">
+      <span class="lang-dropdown-item-flag">🇨🇳</span>
+      <span>中文</span>
+    </div>
+    <div class="lang-dropdown-item" data-locale="en-US">
+      <span class="lang-dropdown-item-flag">🇺🇸</span>
+      <span>English</span>
+    </div>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+    <!-- SVG icons -->
+  </button>
+</div>
+```
+
+**注意：**
+- 首页链接使用锚点（`#kpi`、`#services`、`#process`）
+- 其他页面链接指向首页锚点（`/index.html#kpi`、`/index.html#services`、`/index.html#process`）
+
+### 滚动高亮
+- 使用 IntersectionObserver 检测可见区域
+- 自动高亮当前可见的导航项
+- 平滑滚动支持（`scroll-behavior: smooth`）
+
+### 样式规范
+- 深色主题主色：`#00f0ff` (青蓝)
+- 浅色主题主色：`#007aff` (苹果蓝)
+- 响应式设计
+- 玻璃态导航栏效果（`backdrop-filter: blur()`）
+
+### 国际化系统
+- 支持中英文双语切换
+- 翻译文件：`i18n/zh-CN.json`、`i18n/en-US.json`
+- 语言切换按钮在所有页面显示（导航栏右上角）
+- 所有需要翻译的文本使用 `data-i18n` 属性
+- 翻译键值使用点分隔的路径（如 `nav.home`、`hero.title`）
+- 语言偏好保存至 localStorage，跨页面保持
+- 国际化模块：`i18n.js`
+
+## 开发规范
+
+### 添加新页面
+1. 复制现有页面模板
+2. 确保包含统一的导航栏（参考 `index.html`）
+3. 导航栏右侧 div 使用 `style="display:flex;align-items:center;gap:12px"`
+4. 修改页面特定内容
+
+### 修改导航栏
+如需修改导航栏，需要同步更新所有页面：
+- `index.html`
+- `pages/*.html` (3个文件)
+- `services/*.html` (8个文件)
+
+或考虑未来使用组件系统动态加载。
+
+### 样式修改
+- 深色主题变量：`:root` 或 `:root[data-theme="dark"]`
+- 浅色主题变量：`:root[data-theme="light"]`
+- 主题切换过渡效果已内置，无需额外配置
+
+## 部署
+
+部署到腾讯云轻量服务器：
+1. 使用 Nginx 作为 Web 服务器
+2. 静态文件可直接部署，无需构建
+3. 确保 Nginx 配置正确处理后端路由
+
+## 注意事项
+
+- 所有页面使用相同的导航栏结构
+- 所有页面的导航栏已国际化（统一使用首页的 `data-i18n` 属性）
+- 主题切换功能依赖 `app.js`
+- 国际化功能依赖 `i18n.js` 和翻译文件
+- 外部链接自动在新窗口打开
+- 导航高亮仅在有 `section[id]` 的页面生效
+- 翻译文件中已包含首页、流程页面和联系页面的完整翻译
+
+

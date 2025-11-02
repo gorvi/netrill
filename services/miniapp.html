@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>小程序与移动端WebApp开发 - Netrill | 上海络川科技有限公司</title>
+  <meta name="description" content="Netrill（上海络川科技有限公司）提供小程序与移动H5开发服务，多端适配、性能优化、微信生态集成，PWA支持。" />
+  <meta name="keywords" content="Netrill,小程序开发,移动H5,微信小程序,PWA,跨端开发,上海络川科技" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/i18n.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">
+          <img src="/img/logo96.png" alt="洛川科技 Logo" style="width:36px;height:36px;object-fit:contain" />
+        </div>
+        <span data-i18n="brand.name">洛川科技</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:12px;position:relative">
+        <a href="/index.html#kpi" data-i18n="nav.home">首页</a>
+        <a href="/index.html#services" data-i18n="nav.services">服务</a>
+        <a href="/index.html#process" data-i18n="nav.process">流程</a>
+        <a class="btn btn-primary" href="/pages/contact.html" data-i18n="nav.getQuote">获取报价</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="切换语言">中</button>
+        <div id="lang-dropdown" class="lang-dropdown">
+          <div class="lang-dropdown-item active" data-locale="zh-CN">
+            <span class="lang-dropdown-item-flag">🇨🇳</span>
+            <span>中文</span>
+          </div>
+          <div class="lang-dropdown-item" data-locale="en-US">
+            <span class="lang-dropdown-item-flag">🇺🇸</span>
+            <span>English</span>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero reveal">
+      <h1 data-i18n="servicePages.miniapp.title">小程序与移动H5</h1>
+      <p class="muted" data-i18n="servicePages.miniapp.subtitle">多端适配与性能优化，微信生态与 WebApp 一站式</p>
+    </section>
+
+    <div class="stat-grid reveal">
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="servicePages.miniapp.stat1">📱</span>
+        <div class="muted" data-i18n="servicePages.miniapp.stat1_label">多端适配</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="servicePages.miniapp.stat2">⚡</span>
+        <div class="muted" data-i18n="servicePages.miniapp.stat2_label">秒开优化</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="servicePages.miniapp.stat3">🌐</span>
+        <div class="muted" data-i18n="servicePages.miniapp.stat3_label">离线缓存</div>
+      </div>
+    </div>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_capabilities">核心能力</h2>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.miniapp.capability1_icon">🎯</div>
+          <h3 data-i18n="servicePages.miniapp.capability1_title">用户体验优化</h3>
+          <p class="muted" data-i18n="servicePages.miniapp.capability1_desc">响应式布局、平滑动画、交互反馈</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.miniapp.capability2_icon">🚀</div>
+          <h3 data-i18n="servicePages.miniapp.capability2_title">性能优化</h3>
+          <p class="muted" data-i18n="servicePages.miniapp.capability2_desc">首屏加载、懒加载、代码分割</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.miniapp.capability3_icon">🔗</div>
+          <h3 data-i18n="servicePages.miniapp.capability3_title">微信生态集成</h3>
+          <p class="muted" data-i18n="servicePages.miniapp.capability3_desc">微信登录、支付、分享、模板消息</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon" data-i18n="servicePages.miniapp.capability4_icon">📦</div>
+          <h3 data-i18n="servicePages.miniapp.capability4_title">PWA 支持</h3>
+          <p class="muted" data-i18n="servicePages.miniapp.capability4_desc">离线缓存、推送通知、安装引导</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_tech">技术栈</h2>
+      <div class="demo-container">
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <span class="badge badge-primary">uni-app</span>
+          <span class="badge badge-primary">Taro</span>
+          <span class="badge">WeChat SDK</span>
+          <span class="badge">Vue 3</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">Pinia</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_features">特色功能</h2>
+      <div class="code-block">
+        <code data-i18n="servicePages.miniapp.features_code1">// 小程序能力示例</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.miniapp.features_code2">→ 地理位置定位</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.miniapp.features_code3">→ 扫码与相机</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.miniapp.features_code4">→ 微信支付集成</code><br>
+        <code style="color:var(--muted)" data-i18n="servicePages.miniapp.features_code5">→ 分享与转发</code>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2 data-i18n="servicePages.section_delivery">交付内容</h2>
+      <ul class="feature-list">
+        <li><b data-i18n="servicePages.delivery_design">设计文件：</b><span data-i18n="servicePages.miniapp.delivery1_value">跨端开发框架、组件库</span></li>
+        <li><b data-i18n="servicePages.delivery_code">前端代码：</b><span data-i18n="servicePages.miniapp.delivery2_value">性能监控、错误追踪</span></li>
+        <li><b data-i18n="servicePages.delivery_deploy">部署配置：</b><span data-i18n="servicePages.miniapp.delivery3_value">微信审核、发布流程</span></li>
+        <li><b data-i18n="servicePages.delivery_doc">文档说明：</b><span data-i18n="servicePages.miniapp.delivery4_value">用户手册、开发文档</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div data-i18n="footer.copyright">© 2025 上海络川科技有限公司 · 已服务 X+ 客户 · 平均响应 < 24h</div>
+  </footer>
+</body>
+</html>
+
+

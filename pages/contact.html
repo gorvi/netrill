@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>获取报价与联系 - Netrill | 上海络川科技有限公司</title>
+  <meta name="description" content="联系我们获取定制开发报价。Netrill（上海络川科技有限公司）提供48小时内专业评估，支持邮件与表单咨询，快速响应您的项目需求。" />
+  <meta name="keywords" content="Netrill,报价,咨询,联系方式,定制开发,上海络川科技" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/i18n.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">
+          <img src="/img/logo96.png" alt="洛川科技 Logo" style="width:36px;height:36px;object-fit:contain" />
+        </div>
+        <span data-i18n="brand.name">洛川科技</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:12px;position:relative">
+        <a href="/index.html#kpi" data-i18n="nav.home">首页</a>
+        <a href="/index.html#services" data-i18n="nav.services">服务</a>
+        <a href="/index.html#process" data-i18n="nav.process">流程</a>
+        <a class="btn btn-primary" href="/pages/contact.html" data-i18n="nav.getQuote">获取报价</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="切换语言">中</button>
+        <div id="lang-dropdown" class="lang-dropdown">
+          <div class="lang-dropdown-item active" data-locale="zh-CN">
+            <span class="lang-dropdown-item-flag">🇨🇳</span>
+            <span>中文</span>
+          </div>
+          <div class="lang-dropdown-item" data-locale="en-US">
+            <span class="lang-dropdown-item-flag">🇺🇸</span>
+            <span>English</span>
+          </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero reveal">
+      <h1 data-i18n="contactPage.hero_title">获取评估与报价</h1>
+      <p class="muted" data-i18n="contactPage.hero_subtitle">请简述你的业务、功能与时间预算，48小时内回复</p>
+    </section>
+
+    <div class="stat-grid reveal">
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="contactPage.stat1_number">< 48h</span>
+        <div class="muted" data-i18n="contactPage.stat1_desc">响应时间</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="contactPage.stat2_number">📧</span>
+        <div class="muted" data-i18n="contactPage.stat2_desc">免费评估</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-i18n="contactPage.stat3_number">✓</span>
+        <div class="muted" data-i18n="contactPage.stat3_desc">专业方案</div>
+      </div>
+    </div>
+
+    <section class="section reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start">
+      <div>
+        <h2 data-i18n="contactPage.form_title">在线咨询</h2>
+        <p class="muted" style="margin-bottom:24px" data-i18n="contactPage.form_subtitle">填写表单，我们会尽快联系您</p>
+        <form action="https://formspree.io/f/xblpzern" method="POST" style="display:grid;gap:16px">
+          <input name="name" placeholder="称呼" data-i18n="contactPage.form_name" required style="padding:12px;border-radius:8px;border:1px solid var(--card-border);background:var(--card);color:var(--fg)" />
+          <input name="email" type="email" placeholder="邮箱" data-i18n="contactPage.form_email" required style="padding:12px;border-radius:8px;border:1px solid var(--card-border);background:var(--card);color:var(--fg)" />
+          <textarea name="message" rows="6" placeholder="请简述你的业务、功能与时间预算" data-i18n="contactPage.form_message" required style="padding:12px;border-radius:8px;border:1px solid var(--card-border);background:var(--card);color:var(--fg);font-family:inherit"></textarea>
+          <button class="btn btn-primary" type="submit" data-i18n="contactPage.form_submit">发送咨询</button>
+        </form>
+      </div>
+      <div>
+        <h2 data-i18n="contactPage.other_title">其他联系方式</h2>
+        <div class="demo-container">
+          <div style="display:grid;gap:24px">
+            <div class="demo-item" style="display:flex;align-items:center;gap:16px">
+              <div class="demo-item-icon" style="margin:0">📧</div>
+              <div>
+                <h3 style="margin:0 0 8px" data-i18n="contactPage.contact_email_title">邮箱</h3>
+                <p class="muted" style="margin:0" data-i18n="contactPage.contact_email_value">hi@你的域名</p>
+              </div>
+            </div>
+            <div class="demo-item" style="display:flex;align-items:center;gap:16px">
+              <div class="demo-item-icon" style="margin:0">💬</div>
+              <div>
+                <h3 style="margin:0 0 8px" data-i18n="contactPage.contact_wechat_title">微信</h3>
+                <p class="muted" style="margin:0" data-i18n="contactPage.contact_wechat_value">你的微信号</p>
+              </div>
+            </div>
+            <div class="demo-item" style="display:flex;align-items:center;gap:16px">
+              <div class="demo-item-icon" style="margin:0">⏰</div>
+              <div>
+                <h3 style="margin:0 0 8px" data-i18n="contactPage.contact_hours_title">工作时间</h3>
+                <p class="muted" style="margin:0" data-i18n="contactPage.contact_hours_value">工作日 9:00-18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h3 style="margin-top:32px" data-i18n="contactPage.why_title">为什么选择我们</h3>
+        <ul class="feature-list">
+          <li><b data-i18n="contactPage.why1_title">快速响应：</b><span data-i18n="contactPage.why1_desc">48小时内提供专业方案</span></li>
+          <li><b data-i18n="contactPage.why2_title">透明报价：</b><span data-i18n="contactPage.why2_desc">明确收费，无隐藏费用</span></li>
+          <li><b data-i18n="contactPage.why3_title">质量保证：</b><span data-i18n="contactPage.why3_desc">里程碑交付，验收通过</span></li>
+          <li><b data-i18n="contactPage.why4_title">持续支持：</b><span data-i18n="contactPage.why4_desc">交付后质保与维护服务</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div data-i18n="contactPage.footer_copyright">© 2025 上海络川科技有限公司</div>
+  </footer>
+</body>
+</html>
+
+

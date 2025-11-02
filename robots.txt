@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# 网站所有者信息
+# Netrill | 上海络川科技有限公司
+# https://www.netrill.com
+
+Sitemap: https://www.netrill.com/sitemap.xml
+
+
+
