@@ -360,12 +360,16 @@ p{
   justify-content:center;
   transition:all .3s ease;
   position:relative;
-  overflow:hidden
+  overflow:hidden;
+  color:var(--fg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
 }
 
 :root[data-theme="light"] .theme-toggle,:root[data-theme="light"] .lang-toggle{
   border-color:#d1d9e6;
-  background:rgba(247,249,252,0.5)
+  background:rgba(247,249,252,0.5);
+  color:var(--fg)
 }
 
 .theme-toggle:hover,.lang-toggle:hover{
@@ -377,14 +381,18 @@ p{
 
 .theme-toggle svg,.lang-toggle svg{
   transition:all .4s cubic-bezier(.68,-0.55,.27,1.55);
-  pointer-events:none
+  pointer-events:none;
+  color:inherit;
+  stroke:currentColor;
+  fill:none
 }
 
 .lang-toggle{
   border-radius:8px;
   font-size:14px;
   font-weight:600;
-  position:relative
+  position:relative;
+  color:var(--fg)
 }
 
 .lang-dropdown{
@@ -439,12 +447,16 @@ p{
 
 .icon-moon{
   transform:rotate(0deg) scale(1);
-  opacity:1
+  opacity:1;
+  color:var(--fg);
+  stroke:currentColor
 }
 
 .icon-sun{
   transform:rotate(90deg) scale(0);
-  opacity:0
+  opacity:0;
+  color:var(--fg);
+  stroke:currentColor
 }
 
 :root[data-theme="light"] .icon-moon{
@@ -455,7 +467,8 @@ p{
 :root[data-theme="light"] .icon-sun{
   transform:rotate(0deg) scale(1);
   opacity:1;
-  color:#ffb800
+  color:#ffb800;
+  stroke:#ffb800
 }
 
 :root[data-theme="light"] .theme-toggle:hover{
