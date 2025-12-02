@@ -821,3 +821,48 @@ footer{
   color:#fff;
   border:none
 }
+
+/* 返回主页按钮 - 显示在所有二级页面，悬浮在logo下方 */
+.back-to-home{
+  position:fixed;
+  top:80px;
+  left:24px;
+  z-index:101;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  background:var(--card);
+  border:1px solid var(--card-border);
+  border-radius:50%;
+  color:var(--fg);
+  text-decoration:none;
+  font-size:22px;
+  transition:all .3s ease;
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+  backdrop-filter:blur(10px);
+  opacity:0.9
+}
+
+.back-to-home:hover{
+  background:var(--card-hover);
+  border-color:var(--pri);
+  transform:translateY(-2px) scale(1.05);
+  box-shadow:0 6px 30px var(--pri-glow);
+  opacity:1
+}
+
+.back-to-home svg{
+  display:none
+}
+
+@media (max-width:768px){
+  .back-to-home{
+    top:72px;
+    left:16px;
+    width:40px;
+    height:40px;
+    font-size:20px
+  }
+}
